@@ -1,11 +1,11 @@
 require("dotenv/config");
 require("express-async-errors");
 
-const migrationsRun = require("./database/sqlite/migrations"); //Importando SQlite
-const AppError = require("./utills/AppError");
+const migrationsRun = require("./src/database/sqlite/migrations"); //Importando SQlite
+const AppError = require("./src/utills/AppError");
 const express = require("express"); //Importando o express
-const routes = require("./routes/index.js"); //Importando as rotas do index.js
-const uploadConfig = require("./Configs/upload");
+const routes = require("./src/routes/index.js"); //Importando as rotas do index.js
+const uploadConfig = require("./src/configs/upload");
 const cors = require("cors"); //biblioteca para conectar o back com o front
 
 migrationsRun(); //Executar o Banco de Dados, ou seja, criar a tabela do BD
