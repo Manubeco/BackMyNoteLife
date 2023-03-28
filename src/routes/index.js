@@ -11,4 +11,8 @@ routes.use("/notes", notesRoutes);
 routes.use("/tags", tagsRoutes);
 routes.use("/sessions", sessionsRoutes);
 
+routes.use('/health', (req, res) => {
+    res.send('<h1>All well</h1>')
+})
+
 module.exports = routes;

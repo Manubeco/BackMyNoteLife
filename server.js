@@ -5,7 +5,7 @@ const migrationsRun = require("./src/database/sqlite/migrations"); //Importando 
 const AppError = require("./src/utills/AppError");
 const express = require("express"); //Importando o express
 const routes = require("./src/routes/index.js"); //Importando as rotas do index.js
-const uploadConfig = require("./src/configs/upload");
+const uploadConfig = require("./src/configs/upload.js");
 const cors = require("cors"); //biblioteca para conectar o back com o front
 
 migrationsRun(); //Executar o Banco de Dados, ou seja, criar a tabela do BD
@@ -36,5 +36,5 @@ app.use((error, request, response, next) => {
 });
 
 //ACESSO DE PORTA
-const PORT = process.env.PORT || 3333;
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Server is running on Port ${PORT}`)); //Chamando a porta e enviando uma mensagem
