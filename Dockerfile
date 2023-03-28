@@ -18,4 +18,4 @@ COPY . .
 EXPOSE 3333
 
 # Start the application
-CMD ["npm run start"]
+CMD ["npm", "run", "start"]
