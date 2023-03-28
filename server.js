@@ -5,7 +5,7 @@ const migrationsRun = require("./src/database/sqlite/migrations"); //Importando 
 const AppError = require("./src/utills/AppError");
 const express = require("express"); //Importando o express
 const routes = require("./src/routes/index.js"); //Importando as rotas do index.js
-const uploadConfig = require("./src/configs/upload");
+const uploadConfig = require("./src/configs/upload.js");
 const cors = require("cors"); //biblioteca para conectar o back com o front
 
 migrationsRun(); //Executar o Banco de Dados, ou seja, criar a tabela do BD
