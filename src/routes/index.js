@@ -12,7 +12,7 @@ routes.use("/tags", tagsRoutes);
 routes.use("/sessions", sessionsRoutes);
 
 routes.use('/health', (req, res) => {
-    req.send('<h1>All well</h1>')
+    res.send('<h1>All well</h1>')
 })
 
 module.exports = routes;
