@@ -16,7 +16,7 @@ RUN npm install dotenv
 COPY . .
 
 # Expose port 3333 for the application to listen on
-EXPOSE 3000
+EXPOSE 3333
 
 # Start the application
 CMD ["npm", "run", "start"]
